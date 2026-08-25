@@ -6,6 +6,7 @@
 <title>PIVOTSBench</title>
 <meta name="description" content="PIVOTSBench: evaluating fine-grained interpersonal relationship reasoning in multimodal large language models.">
 <link rel="stylesheet" href="./assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='0' y='10' width='6.4' height='12' fill='%23c53b39'/><rect x='6.4' y='10' width='6.4' height='12' fill='%23e8817d'/><rect x='12.8' y='10' width='6.4' height='12' fill='%23eceae5'/><rect x='19.2' y='10' width='6.4' height='12' fill='%2386b6ef'/><rect x='25.6' y='10' width='6.4' height='12' fill='%23256abf'/></svg>">
 </head>
 <body>
 <nav class="nav"><div class="wrap">
@@ -19,9 +20,9 @@
       </ul>
     </div></nav>
 <header class="hero wrap">
+  <p class="eyebrow">EMNLP 2026 &middot; Main Conference</p>
   <h1>Fine-grained interpersonal relationship reasoning in multimodal LLMs</h1>
   <div class="byline">
-    <div class="venue">EMNLP 2026 &middot; Main Conference</div>
     Shuxiang Zhang &middot; Yiting Yin &middot; Wenxuan Song &middot; Yuhang Wu &middot; Miao Liu
   </div>
   <div class="actions">
@@ -45,9 +46,44 @@
     which frame shows it, and which visual cue in that frame carries it.</p>
   </div>
 
+  <figure class="bidir" role="img" aria-label="Each pair is scored twice — once for A's view of B and once for B's view of A — on six dimensions, P, I, V, O, T, S, each on a five-point scale from minus 2 to plus 2.">
+    <svg viewBox="0 8 560 114" aria-hidden="true">
+      <g fill="var(--ink)" font-size="16.5" font-weight="650" text-anchor="middle">
+        <text x="22" y="50">A</text><text x="538" y="50">B</text>
+        <text x="22" y="110">A</text><text x="538" y="110">B</text>
+      </g>
+      <g fill="var(--muted)" font-size="10.5" letter-spacing=".06em" text-anchor="middle">
+        <text x="280" y="22">A&#8217;s view of B</text>
+        <text x="280" y="82">B&#8217;s view of A</text>
+      </g>
+      <g stroke="var(--muted)" stroke-width="1.2">
+        <line x1="40" y1="45" x2="506" y2="45" stroke-dasharray="150 180 136"/>
+        <line x1="52" y1="105" x2="520" y2="105" stroke-dasharray="138 180 150"/>
+      </g>
+      <g fill="var(--muted)">
+        <polygon points="506,40.5 516,45 506,49.5"/>
+        <polygon points="52,100.5 42,105 52,109.5"/>
+      </g>
+      <rect x="198" y="33" width="24" height="24" rx="2" fill="var(--s-zero)"/><rect x="226" y="33" width="24" height="24" rx="2" fill="var(--s-zero)"/><rect x="254" y="33" width="24" height="24" rx="2" fill="var(--s-zero)"/><rect x="282" y="33" width="24" height="24" rx="2" fill="var(--s-zero)"/><rect x="310" y="33" width="24" height="24" rx="2" fill="var(--s-zero)"/><rect x="338" y="33" width="24" height="24" rx="2" fill="var(--s-zero)"/>
+      <rect x="198" y="93" width="24" height="24" rx="2" fill="var(--s-zero)"/><rect x="226" y="93" width="24" height="24" rx="2" fill="var(--s-zero)"/><rect x="254" y="93" width="24" height="24" rx="2" fill="var(--s-zero)"/><rect x="282" y="93" width="24" height="24" rx="2" fill="var(--s-zero)"/><rect x="310" y="93" width="24" height="24" rx="2" fill="var(--s-zero)"/><rect x="338" y="93" width="24" height="24" rx="2" fill="var(--s-zero)"/>
+      <g fill="var(--ink-2)" font-size="12" font-weight="600" text-anchor="middle">
+        <text x="210" y="49">P</text><text x="238" y="49">I</text><text x="266" y="49">V</text><text x="294" y="49">O</text><text x="322" y="49">T</text><text x="350" y="49">S</text>
+        <text x="210" y="109">P</text><text x="238" y="109">I</text><text x="266" y="109">V</text><text x="294" y="109">O</text><text x="322" y="109">T</text><text x="350" y="109">S</text>
+      </g>
+    </svg>
+    <div class="legend">
+      <span><i style="background:var(--s-neg2)"></i>&minus;2</span>
+      <span><i style="background:var(--s-neg1)"></i>&minus;1</span>
+      <span><i style="background:var(--s-zero)"></i>0</span>
+      <span><i style="background:var(--s-pos1)"></i>+1</span>
+      <span><i style="background:var(--s-pos2)"></i>+2</span>
+      <span class="muted">Sign follows the dimension&rsquo;s own axis, not good vs. bad.</span>
+    </div>
+  </figure>
+
   <div class="figures">
     <div><b>191</b><span>video clips, 30s each</span></div>
-    <div><b>765</b><span>directional pairs per dimension</span></div>
+    <div><b>765</b><span>directional pairs</span></div>
     <div><b>4,590</b><span>scoring items</span></div>
     <div><b>483</b><span>visual-reasoning items</span></div>
     <div><b>0.81</b><span>Krippendorff's &alpha;</span></div>
@@ -96,6 +132,13 @@
     <p class="sub">GPT-5 leads at <b>56.9%</b> average on the Social-IQ 2.0 subset; the strongest
     open model tested, Qwen3-32B-VL, reaches <b>34.5%</b>. For reference, the three human annotators
     agreed exactly with each other 83.9% of the time.</p>
+    <figure class="headline">
+      <div class="hrow"><span class="hl">Human agreement</span><span class="track"><i class="ref" style="width:83.9%"></i></span><b>83.9</b></div>
+      <div class="hrow"><span class="hl">GPT-5</span><span class="track"><i style="width:56.9%"></i></span><b>56.9</b></div>
+      <div class="hrow"><span class="hl">Qwen3-32B-VL</span><span class="track"><i style="width:34.5%"></i></span><b>34.5</b></div>
+      <figcaption class="muted small">Average scoring accuracy, Social-IQ 2.0 subset. The human bar
+      is inter-annotator exact agreement; the tick marks chance at 20%.</figcaption>
+    </figure>
     <p class="sub">The gap is not uniform. Power is comparatively easy for every model. Valence and
     objective are the hard ones: valence needs affective signal that most current models do not
     represent, and objective breaks down whenever a task-driven interaction is emotionally loud.</p>
