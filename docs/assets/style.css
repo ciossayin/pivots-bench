@@ -85,6 +85,9 @@ section:first-of-type { border-top: none; }
 header.hero { padding-top: 4.5rem; padding-bottom: 3rem; }
 header.hero h1 { max-width: 24ch; }
 .byline { margin-top: 1.4rem; font-size: .98rem; line-height: 1.75; }
+.byline sup { color: var(--muted); font-size: .68em; }
+.affil { margin-top: .35rem; font-size: .85rem; color: var(--muted); }
+.affil + .affil { margin-top: .1rem; }
 .eyebrow { color: var(--muted); font-size: .8rem; letter-spacing: .07em;
            text-transform: uppercase; font-weight: 600; margin-bottom: 1.1rem; }
 .actions { margin-top: 1.75rem; display: flex; gap: .5rem; flex-wrap: wrap; }
