@@ -1,0 +1,16 @@
+{
+  "_source": "PIVOTSBench paper, Appendix D.2 (annotation interface)",
+  "_description": "Standardized visual-cue categories an annotator attaches to a dimension score. Also the answer space for Task 3.",
+  "cues": {
+    "A": "Facial expression",
+    "B": "Body posture",
+    "C": "Proximity",
+    "D": "Body height",
+    "E": "Hand gesture",
+    "F": "Social norms",
+    "G": "Gaze",
+    "H": "Context",
+    "I": "Attire",
+    "J": "Contact"
+  }
+}

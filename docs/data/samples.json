@@ -1,0 +1,470 @@
+{
+  "generated_by": "scripts/export_site_data.py",
+  "dimensions": [
+    {
+      "key": "P",
+      "name": "Power",
+      "axis": "Egalitarian vs. Hierarchical",
+      "negative_pole": "Other-dominant",
+      "zero": "Egalitarian, balanced",
+      "positive_pole": "Self-dominant",
+      "definition": "Whether the relationship is perceived as equal or unequal in social influence, decision-making agency, and status."
+    },
+    {
+      "key": "I",
+      "name": "Involvement",
+      "axis": "Superficial vs. Intense",
+      "negative_pole": "Superficial",
+      "zero": "Moderate",
+      "positive_pole": "Intense",
+      "definition": "Depth of involvement and emotional investment in the relationship."
+    },
+    {
+      "key": "V",
+      "name": "Valence",
+      "axis": "Positive vs. Negative",
+      "negative_pole": "Hostile",
+      "zero": "Mixed",
+      "positive_pole": "Pleasant",
+      "definition": "Degree of pleasantness and satisfaction versus hostility."
+    },
+    {
+      "key": "O",
+      "name": "Objective",
+      "axis": "Socioemotional vs. Task-oriented",
+      "negative_pole": "Socioemotional, personal, relaxed",
+      "zero": "Mixed",
+      "positive_pole": "Task-oriented, businesslike, structured",
+      "definition": "Whether the relationship is primarily personal or primarily goal-oriented."
+    },
+    {
+      "key": "T",
+      "name": "Permanence",
+      "axis": "Temporary vs. Enduring",
+      "negative_pole": "Short-term, freewheeling",
+      "zero": "Indeterminate",
+      "positive_pole": "Long-term, committed",
+      "definition": "Expected lifespan of the bond and the kind of commitment it carries."
+    },
+    {
+      "key": "S",
+      "name": "Stance",
+      "axis": "Cooperative vs. Competitive",
+      "negative_pole": "Competitive",
+      "zero": "Neither",
+      "positive_pole": "Cooperative",
+      "definition": "Degree of warmth, support, and collaboration, also referred to as affiliation."
+    }
+  ],
+  "cues": {
+    "A": "Facial expression",
+    "B": "Body posture",
+    "C": "Proximity",
+    "D": "Body height",
+    "E": "Hand gesture",
+    "F": "Social norms",
+    "G": "Gaze",
+    "H": "Context",
+    "I": "Attire",
+    "J": "Contact"
+  },
+  "samples": [
+    {
+      "video_id": "4AmVjblOvy4_0_30s",
+      "source": "social_iq_2.0",
+      "youtube_id": "4AmVjblOvy4",
+      "start_sec": 0,
+      "end_sec": 30,
+      "title": "Filming a video together",
+      "subtitle": "Social-IQ 2.0 · 0:00-0:30",
+      "summary": "Two co-hosts set up a shoot. Equal footing, playful tone, and a strongly cooperative stance, but the objective sits at 0: social banter carrying a production task.",
+      "transcript_excerpt": [
+        {
+          "time": "00:00.002",
+          "text": "tiny I shot it because I've already had"
+        }
+      ],
+      "provenance": "Figure 16 of the paper, the annotation interface.",
+      "directions": [
+        {
+          "subject": "Blonde Woman",
+          "target": "Brown-Haired Woman",
+          "scores": {
+            "P": {
+              "score": 0,
+              "timestamp_sec": 16.3,
+              "cues": [
+                "A",
+                "B"
+              ],
+              "rationale": "They appear as co-hosts/peers in a casual video; no signs of authority or hierarchy."
+            },
+            "I": {
+              "score": 1,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": null
+            },
+            "V": {
+              "score": 1,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": "Tone is playful and positive; the blonde woman is not offended and they are having fun."
+            },
+            "O": {
+              "score": 0,
+              "timestamp_sec": 20.0,
+              "cues": [
+                "F",
+                "H"
+              ],
+              "rationale": "Their interaction mixes social banter with task-oriented content creation (filming a makeup/drinks video)."
+            },
+            "T": {
+              "score": 1,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": "They mention 'last time we filmed' and plan a 'twist' and makeup swap, indicating an ongoing relationship."
+            },
+            "S": {
+              "score": 2,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": "They collaborate on the video and coordinate plans together, showing a highly cooperative stance."
+            }
+          }
+        },
+        {
+          "subject": "Brown-Haired Woman",
+          "target": "Blonde Woman",
+          "scores": {
+            "P": {
+              "score": 0,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": "She treats the blonde woman as an equal partner; no dominance or subordination is evident."
+            },
+            "I": {
+              "score": null,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": "She engages in playful joking, winking, and shares personal experiences."
+            },
+            "V": {
+              "score": 1,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": "Overall pleasant affect; teasing and playfulness are received positively."
+            },
+            "O": {
+              "score": 0,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": "The relationship combines informal social-emotional chatting with the formal goal of producing a video."
+            },
+            "T": {
+              "score": 1,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": "References to previous filming and planning a current 'twist' suggest a stable, continuing collaboration."
+            },
+            "S": {
+              "score": 2,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": "They work together on content and coordinate the filming and makeup swap, indicating high cooperation."
+            }
+          }
+        }
+      ],
+      "keyframe_items": [
+        {
+          "dimension": "P",
+          "subject": "Blonde Woman",
+          "target": "Brown-Haired Woman",
+          "options_sec": [
+            6.3,
+            11.3,
+            16.3,
+            21.3,
+            26.3
+          ],
+          "answer": "C"
+        },
+        {
+          "dimension": "O",
+          "subject": "Blonde Woman",
+          "target": "Brown-Haired Woman",
+          "options_sec": [
+            10.0,
+            15.0,
+            20.0,
+            25.0,
+            29.5
+          ],
+          "answer": "C"
+        }
+      ],
+      "cue_items": [
+        {
+          "dimension": "P",
+          "subject": "Blonde Woman",
+          "target": "Brown-Haired Woman",
+          "frame_sec": 16.3,
+          "options": [
+            "Facial expression",
+            "Body posture",
+            "Body height",
+            "Attire",
+            "Contact"
+          ],
+          "answer": [
+            0,
+            1
+          ],
+          "rationale": "They appear as co-hosts/peers in a casual video; no signs of authority or hierarchy."
+        },
+        {
+          "dimension": "O",
+          "subject": "Blonde Woman",
+          "target": "Brown-Haired Woman",
+          "frame_sec": 20.0,
+          "options": [
+            "Proximity",
+            "Social norms",
+            "Gaze",
+            "Context",
+            "Contact"
+          ],
+          "answer": [
+            1,
+            3
+          ],
+          "rationale": "Their interaction mixes social banter with task-oriented content creation (filming a makeup/drinks video)."
+        }
+      ]
+    },
+    {
+      "video_id": "figure1_left",
+      "source": "social_iq_2.0",
+      "youtube_id": null,
+      "start_sec": 0,
+      "end_sec": 30,
+      "title": "\"I left my hummus back there\"",
+      "subtitle": "Social-IQ 2.0 · parent and child",
+      "summary": "A warm, ordinary exchange. Conversational content alone gives almost nothing away; the visual channel carries the affect.",
+      "dialogue": [
+        {
+          "speaker": "Parent",
+          "text": "I left my hummus back there."
+        },
+        {
+          "speaker": "Child",
+          "text": "What's hummus?"
+        },
+        {
+          "speaker": "Parent",
+          "text": "I'm so glad you two got back together, even though you were apart for a while."
+        }
+      ],
+      "provenance": "Figure 1, left.",
+      "directions": [
+        {
+          "subject": "Parent",
+          "target": "Child",
+          "scores": {
+            "P": {
+              "score": 0,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": null
+            },
+            "I": {
+              "score": 2,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": null
+            },
+            "V": {
+              "score": 1,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": null
+            },
+            "O": {
+              "score": 2,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": null
+            },
+            "T": {
+              "score": 2,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": null
+            },
+            "S": {
+              "score": 2,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": null
+            }
+          }
+        },
+        {
+          "subject": "Child",
+          "target": "Parent",
+          "scores": {
+            "P": {
+              "score": 0,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": null
+            },
+            "I": {
+              "score": 2,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": null
+            },
+            "V": {
+              "score": 1,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": null
+            },
+            "O": {
+              "score": 2,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": null
+            },
+            "T": {
+              "score": 2,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": null
+            },
+            "S": {
+              "score": 2,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": null
+            }
+          }
+        }
+      ],
+      "keyframe_items": [],
+      "cue_items": []
+    },
+    {
+      "video_id": "figure1_right",
+      "source": "social_iq_2.0",
+      "youtube_id": null,
+      "start_sec": 0,
+      "end_sec": 30,
+      "title": "\"Go to an AA meeting right now\"",
+      "subtitle": "Social-IQ 2.0 · parent and child",
+      "summary": "The same category label as the clip above, a completely different configuration. The bond is intense and enduring in both directions, but valence and stance split apart, and the child reads the relationship more harshly than the parent does.",
+      "dialogue": [
+        {
+          "speaker": "Child",
+          "text": "I've had enough of you my whole life! Go to an AA meeting right now and get some help!"
+        },
+        {
+          "speaker": "Parent",
+          "text": "How many more chances does he think we'll give him?"
+        }
+      ],
+      "provenance": "Figure 1, right.",
+      "directions": [
+        {
+          "subject": "Parent",
+          "target": "Child",
+          "scores": {
+            "P": {
+              "score": 1,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": null
+            },
+            "I": {
+              "score": 2,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": null
+            },
+            "V": {
+              "score": -1,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": null
+            },
+            "O": {
+              "score": 2,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": null
+            },
+            "T": {
+              "score": 2,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": null
+            },
+            "S": {
+              "score": -1,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": null
+            }
+          }
+        },
+        {
+          "subject": "Child",
+          "target": "Parent",
+          "scores": {
+            "P": {
+              "score": 1,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": null
+            },
+            "I": {
+              "score": 2,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": null
+            },
+            "V": {
+              "score": -2,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": null
+            },
+            "O": {
+              "score": 2,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": null
+            },
+            "T": {
+              "score": 2,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": null
+            },
+            "S": {
+              "score": -2,
+              "timestamp_sec": null,
+              "cues": [],
+              "rationale": null
+            }
+          }
+        }
+      ],
+      "keyframe_items": [],
+      "cue_items": []
+    }
+  ]
+}

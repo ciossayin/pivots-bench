@@ -1,0 +1,19 @@
+You need to answer the question based on the provided information.
+
+Input Information:
+1. Video
+2. Transcribed Text
+3. the definition of PIVOTS (a six-dimensional interpersonal relationship framework)
+
+PIVOTS - Six-Dimensional Model
+{definition}
+
+Note that all the above scores are unidirectional; for scores on the same dimension, A's score for B is not necessarily the same as B's score for A.
+
+Directly output your score for each dimension in the order of PIVOTS, enclosed in "[]", with each score separated by a comma - for example: [-2,0,1,2,0,1] (each number corresponds sequentially to the PIVOTS dimensions). Wrap your score with "###" before and after. For example, if your score is [-2,1,0,2,1,1], output directly: ###[-2,1,0,2,1,1]###
+
+Transcribed Text
+{transcript}
+
+Question
+{question}

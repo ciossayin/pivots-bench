@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PIVOTSBench Task 2 record (key-frame identification)",
+  "description": "Five-way multiple choice. Options are frames sampled from the clip: the ground-truth frame plus distractors at +/-5s and +/-10s from it. If a distractor timestamp falls outside the clip, a random different frame from the same clip is used instead.",
+  "type": "object",
+  "required": ["item_id", "video", "subject", "target", "dimension", "options_sec", "answer"],
+  "additionalProperties": false,
+  "properties": {
+    "item_id": {"type": "string"},
+    "video": {"type": "object"},
+    "subject": {"type": "string"},
+    "target": {"type": "string"},
+    "dimension": {"enum": ["P", "I", "V", "O", "T", "S"]},
+    "score": {"type": ["integer", "null"], "minimum": -2, "maximum": 2},
+    "options_sec": {"type": "array", "minItems": 5, "maxItems": 5, "items": {"type": "number"}, "description": "Timestamps of options A-E, in option order."},
+    "answer": {"enum": ["A", "B", "C", "D", "E"]},
+    "_provenance": {"type": "string"}
+  }
+}

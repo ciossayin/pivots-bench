@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PIVOTSBench</title>
+<meta name="description" content="PIVOTSBench: evaluating fine-grained interpersonal relationship reasoning in multimodal large language models.">
+<link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+<nav class="nav"><div class="wrap">
+      <a class="mark" href="./">PIVOTSBench</a>
+      <ul>
+        <li><a href="./" aria-current="page">Overview</a></li>
+        <li><a href="./data.html" >Samples</a></li>
+        <li><a href="./leaderboard.html" >Results</a></li>
+        <li><a href="./dataset.html" >Dataset</a></li>
+        <li><a href="https://github.com/ciossayin/pivots-bench">GitHub</a></li>
+      </ul>
+    </div></nav>
+<header class="hero wrap">
+  <h1>Fine-grained interpersonal relationship reasoning in multimodal LLMs</h1>
+  <div class="byline">
+    <div class="venue">EMNLP 2026 &middot; Main Conference</div>
+    Shuxiang Zhang &middot; Yiting Yin &middot; Wenxuan Song &middot; Yuhang Wu &middot; Miao Liu
+  </div>
+  <div class="actions">
+    <a href="#" aria-disabled="true">Paper</a>
+    <a href="https://github.com/ciossayin/pivots-bench">Code</a>
+    <a href="./dataset.html">Dataset</a>
+    <a href="./data.html">Browse samples</a>
+  </div>
+</header>
+
+<section class="wrap">
+  <div class="narrow stack">
+    <p class="lede">People do not read a relationship as a category. They read it as a set of
+    graded, <b>directional</b> judgments &mdash; and they read it from faces, posture and timing as
+    much as from words.</p>
+    <p class="sub">PIVOTS is the first benchmark that asks whether multimodal LLMs can do the same:
+    score a relationship on six psychology-grounded dimensions, separately for each participant's
+    point of view, from a 30-second clip and its transcript. Two clips can share the label
+    <em>parent&ndash;child</em> and sit at opposite ends of nearly every dimension.</p>
+    <p class="sub">Alongside scoring, two auxiliary tasks ask the model to point at its evidence:
+    which frame shows it, and which visual cue in that frame carries it.</p>
+  </div>
+
+  <div class="figures">
+    <div><b>191</b><span>video clips, 30s each</span></div>
+    <div><b>765</b><span>directional pairs per dimension</span></div>
+    <div><b>4,590</b><span>scoring items</span></div>
+    <div><b>483</b><span>visual-reasoning items</span></div>
+    <div><b>0.81</b><span>Krippendorff's &alpha;</span></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>Six dimensions</h2>
+  <p class="sub small" style="margin-top:.5rem;max-width:62ch">Four axes come from Wish, Deutsch and
+  Kaplan (1976); valence and permanence extend them. Each is a five-point bipolar scale from
+  &minus;2 to +2, scored once for A&rsquo;s view of B and once for B&rsquo;s view of A.</p>
+  <div class="dims">
+    <div><span class="key">P</span><span class="name">Power</span><span class="axis">Egalitarian vs. hierarchical &mdash; <em>influence, decision-making agency, status</em></span></div>
+    <div><span class="key">I</span><span class="name">Involvement</span><span class="axis">Superficial vs. intense &mdash; <em>intimacy, self-disclosure, interdependence</em></span></div>
+    <div><span class="key">V</span><span class="name">Valence</span><span class="axis">Positive vs. negative &mdash; <em>the emotional quality of the interaction</em></span></div>
+    <div><span class="key">O</span><span class="name">Objective</span><span class="axis">Socioemotional vs. task-oriented &mdash; <em>driven by the bond or by the goal</em></span></div>
+    <div><span class="key">T</span><span class="name">Permanence</span><span class="axis">Temporary vs. enduring &mdash; <em>the expected lifespan of the bond</em></span></div>
+    <div><span class="key">S</span><span class="name">Stance</span><span class="axis">Cooperative vs. competitive &mdash; <em>are the two sets of interests linked or opposed</em></span></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>Three tasks</h2>
+  <div class="tasks">
+    <div><div>
+      <h3>Six-dimensional scoring</h3>
+      <p>Given the clip and its transcript, predict the six scores for A&rarr;B. Five options per
+      item, so chance is 20%.</p>
+    </div></div>
+    <div><div>
+      <h3>Key-frame identification</h3>
+      <p>Five candidate frames; pick the one that best shows the dimension being scored. Distractors
+      sit &plusmn;5s and &plusmn;10s from the annotated evidence frame.</p>
+    </div></div>
+    <div><div>
+      <h3>Visual cue causal analysis</h3>
+      <p>Given that frame, pick the two cues that carry the judgment &mdash; expression, posture,
+      gaze, gesture, attire, context. Half credit for one, so chance is 40%.</p>
+    </div></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>What the results say</h2>
+  <div class="narrow stack" style="margin-top:1rem">
+    <p class="sub">GPT-5 leads at <b>56.9%</b> average on the Social-IQ 2.0 subset; the strongest
+    open model tested, Qwen3-32B-VL, reaches <b>34.5%</b>. For reference, the three human annotators
+    agreed exactly with each other 83.9% of the time.</p>
+    <p class="sub">The gap is not uniform. Power is comparatively easy for every model. Valence and
+    objective are the hard ones: valence needs affective signal that most current models do not
+    represent, and objective breaks down whenever a task-driven interaction is emotionally loud.</p>
+    <p class="sub">Two findings cut against the obvious. Redacting kinship terms and honorifics from
+    the transcript costs only 2.5 points &mdash; models are not simply reading the labels. And
+    scoring all six dimensions at once beats scoring them one at a time on casual interactions
+    (+8.7), while on in-depth interviews it hurts.</p>
+    <p><a href="./leaderboard.html">All results and ablations &rarr;</a></p>
+  </div>
+</section>
+
+<footer class="wrap">
+      <div>PIVOTSBench &middot; EMNLP 2026</div>
+      <div><a href="https://github.com/ciossayin/pivots-bench">Code and data</a> &middot; <a href="./dataset.html#cite">Cite</a></div>
+    </footer>
+</body>
+</html>

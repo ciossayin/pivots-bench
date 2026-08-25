@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PIVOTSBench Task 1 record",
+  "description": "One directional relationship (subject -> target) inside one clip, scored on all six PIVOTS dimensions. A benchmark item is one (record, dimension) pair, so N records yield 6N Task 1 items.",
+  "type": "object",
+  "required": ["item_id", "video", "subject", "target", "scores"],
+  "additionalProperties": false,
+  "properties": {
+    "item_id": {"type": "string", "description": "Stable identifier: <video_id>__<subject_slug>__<target_slug>"},
+    "video": {
+      "type": "object",
+      "required": ["video_id", "source", "start_sec", "end_sec"],
+      "additionalProperties": false,
+      "properties": {
+        "video_id": {"type": "string"},
+        "source": {"enum": ["social_iq_2.0", "youtube"]},
+        "youtube_id": {"type": ["string", "null"], "description": "11-character YouTube identifier. Null when the clip is not resolvable to a public URL."},
+        "start_sec": {"type": "number"},
+        "end_sec": {"type": "number"},
+        "clip_file": {"type": ["string", "null"], "description": "Expected local filename after running scripts/prepare_clips.py, e.g. 4AmVjblOvy4_0_30s.mp4"},
+        "transcript_file": {"type": ["string", "null"]}
+      }
+    },
+    "subject": {"type": "string", "description": "The character whose perception is being scored (A in A -> B)"},
+    "target": {"type": "string"},
+    "tone": {"enum": ["positive", "negative", "neutral", "serious", "sarcastic", null]},
+    "scores": {
+      "type": "object",
+      "required": ["P", "I", "V", "O", "T", "S"],
+      "additionalProperties": false,
+      "patternProperties": {
+        "^[PIVOTS]$": {
+          "type": "object",
+          "required": ["score"],
+          "additionalProperties": false,
+          "properties": {
+            "score": {"type": ["integer", "null"], "minimum": -2, "maximum": 2},
+            "timestamp_sec": {"type": ["number", "null"], "description": "Frame that best supports the score. Ground truth for Task 2."},
+            "cues": {"type": "array", "items": {"enum": ["A","B","C","D","E","F","G","H","I","J"]}, "maxItems": 10, "description": "Ground truth for Task 3. Two cues per item in the released benchmark."},
+            "rationale": {"type": ["string", "null"]}
+          }
+        }
+      }
+    },
+    "_provenance": {"type": "string"}
+  }
+}

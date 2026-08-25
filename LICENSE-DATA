@@ -1,0 +1,21 @@
+PIVOTSBench annotations are released under
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+(CC BY-NC-SA 4.0): https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+Scope
+-----
+This license covers the material this repository actually distributes:
+PIVOTS dimension scores, evidence timestamps, visual-cue tags, rationales,
+task splits, and question templates.
+
+It does NOT cover the underlying videos.
+
+* Social-IQ 2.0 clips remain under the Social-IQ 2.0 Challenge license and
+  must be obtained from the original distributor.
+* YouTube material is referenced by video identifier and time span only. No
+  raw video, audio, or extracted frames are redistributed here. Retrieval of
+  the source video is the user's responsibility and is subject to YouTube's
+  Terms of Service.
+
+Use is restricted to academic research. See data/README.md for the intended
+use and out-of-scope use statements.

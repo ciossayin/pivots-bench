@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use PIVOTSBench, please cite the paper."
+title: "PIVOTSBench: Evaluating Fine-Grained Interpersonal Relationship Reasoning in Multimodal Large Language Models"
+authors:
+  - family-names: Zhang
+    given-names: Shuxiang
+  - family-names: Yin
+    given-names: Yiting
+  - family-names: Song
+    given-names: Wenxuan
+  - family-names: Wu
+    given-names: Yuhang
+  - family-names: Liu
+    given-names: Miao
+year: 2026
+preferred-citation:
+  type: conference-paper
+  title: "PIVOTSBench: Evaluating Fine-Grained Interpersonal Relationship Reasoning in Multimodal Large Language Models"
+  collection-title: "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing"
+  year: 2026
+  authors:
+    - family-names: Zhang
+      given-names: Shuxiang
+    - family-names: Yin
+      given-names: Yiting
+    - family-names: Song
+      given-names: Wenxuan
+    - family-names: Wu
+      given-names: Yuhang
+    - family-names: Liu
+      given-names: Miao

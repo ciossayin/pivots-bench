@@ -1,0 +1,14 @@
+{
+  "_source": "PIVOTSBench paper, Section 3.3 and Appendix G",
+  "videos": {"social_iq": 121, "youtube": 70, "total": 191},
+  "clip_length_seconds": 30,
+  "directional_pairs_per_dimension": {"social_iq": 595, "youtube": 170, "total": 765},
+  "task1_scores_total": 4590,
+  "auxiliary_vqa_pairs": 483,
+  "scale": {"min": -2, "max": 2, "levels": 5, "chance_task1": 20.0, "chance_task2": 20.0, "chance_task3": 40.0},
+  "agreement": {"krippendorff_alpha": 0.8125, "exact_agreement_pct": 83.87, "cohens_kappa_human_vs_assisted": 0.9770, "revised_from_model_init_pct": 25.3, "validation_videos": 35},
+  "tone_distribution_pct": {
+    "social_iq": {"positive": 61.6, "serious": 13.8, "neutral": 9.7, "negative": 7.8, "sarcastic": 7.1},
+    "youtube":   {"serious": 59.4, "positive": 17.4, "negative": 14.1, "neutral": 6.7, "sarcastic": 2.4}
+  }
+}

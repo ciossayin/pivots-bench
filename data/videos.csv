@@ -1,0 +1,4 @@
+video_id,source,youtube_id,start_sec,end_sec,n_characters,tone,notes
+4AmVjblOvy4_0_30s,social_iq_2.0,4AmVjblOvy4,0,30,2,positive,"Two co-hosts filming a video together. Example shown in Figure 16 of the paper."
+figure1_left,social_iq_2.0,,0,30,2,positive,"Parent-child, cooperative. Figure 1 left. Identifier withheld until the full release."
+figure1_right,social_iq_2.0,,0,30,2,negative,"Parent-child, adversarial. Figure 1 right. Identifier withheld until the full release."

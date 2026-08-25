@@ -1,0 +1,8 @@
+# Core evaluation pipeline
+openai>=1.40.0        # any OpenAI-compatible endpoint (GPT, Gemini proxy, vLLM, Ollama)
+numpy>=1.24
+pandas>=2.0
+tqdm>=4.66
+jsonschema>=4.20
+krippendorff>=0.6.1   # inter-annotator agreement
+opencv-python>=4.9    # frame sampling from local video files

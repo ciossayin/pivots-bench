@@ -1,0 +1,8 @@
+dimension,exact_agreement_pct,krippendorff_alpha
+P,86.23,0.6434
+I,83.48,0.8402
+V,81.98,0.7693
+O,79.97,0.7803
+T,87.59,0.8395
+S,83.96,0.7906
+overall,83.87,0.8125

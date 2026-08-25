@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PIVOTSBench Task 3 record (visual cue causal analysis)",
+  "description": "Given the key frame and the direction, select the two cues that support the score. Scoring: 0.5 for one correct, 1.0 for both. Chance level 40%.",
+  "type": "object",
+  "required": ["item_id", "video", "subject", "target", "dimension", "frame_sec", "options", "answer"],
+  "additionalProperties": false,
+  "properties": {
+    "item_id": {"type": "string"},
+    "video": {"type": "object"},
+    "subject": {"type": "string"},
+    "target": {"type": "string"},
+    "dimension": {"enum": ["P", "I", "V", "O", "T", "S"]},
+    "score": {"type": ["integer", "null"], "minimum": -2, "maximum": 2},
+    "frame_sec": {"type": "number"},
+    "options": {"type": "array", "minItems": 5, "maxItems": 5, "items": {"enum": ["A","B","C","D","E","F","G","H","I","J"]}, "description": "Five cue categories offered, in option order A-E."},
+    "answer": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"enum": ["A","B","C","D","E"]}},
+    "rationale": {"type": ["string", "null"]},
+    "_provenance": {"type": "string"}
+  }
+}

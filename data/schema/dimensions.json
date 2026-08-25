@@ -1,0 +1,12 @@
+{
+  "_source": "PIVOTSBench paper, Section 3.1 and Appendix B",
+  "_note": "Five-point bipolar Likert scale. The sign carries meaning: see 'negative_pole' and 'positive_pole'.",
+  "dimensions": [
+    {"key": "P", "name": "Power",       "axis": "Egalitarian vs. Hierarchical", "negative_pole": "Other-dominant", "zero": "Egalitarian, balanced", "positive_pole": "Self-dominant", "definition": "Whether the relationship is perceived as equal or unequal in social influence, decision-making agency, and status."},
+    {"key": "I", "name": "Involvement", "axis": "Superficial vs. Intense",      "negative_pole": "Superficial", "zero": "Moderate", "positive_pole": "Intense", "definition": "Depth of involvement and emotional investment in the relationship."},
+    {"key": "V", "name": "Valence",     "axis": "Positive vs. Negative",        "negative_pole": "Hostile", "zero": "Mixed", "positive_pole": "Pleasant", "definition": "Degree of pleasantness and satisfaction versus hostility."},
+    {"key": "O", "name": "Objective",   "axis": "Socioemotional vs. Task-oriented", "negative_pole": "Socioemotional, personal, relaxed", "zero": "Mixed", "positive_pole": "Task-oriented, businesslike, structured", "definition": "Whether the relationship is primarily personal or primarily goal-oriented."},
+    {"key": "T", "name": "Permanence",  "axis": "Temporary vs. Enduring",       "negative_pole": "Short-term, freewheeling", "zero": "Indeterminate", "positive_pole": "Long-term, committed", "definition": "Expected lifespan of the bond and the kind of commitment it carries."},
+    {"key": "S", "name": "Stance",      "axis": "Cooperative vs. Competitive",  "negative_pole": "Competitive", "zero": "Neither", "positive_pole": "Cooperative", "definition": "Degree of warmth, support, and collaboration, also referred to as affiliation."}
+  ]
+}

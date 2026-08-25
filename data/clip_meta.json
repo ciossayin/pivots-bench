@@ -1,0 +1,35 @@
+{
+  "_description": "Presentation metadata for the public sample browser. Keyed by video_id. Kept apart from the annotation files so the benchmark data stays free of editorial text.",
+  "clips": {
+    "4AmVjblOvy4_0_30s": {
+      "title": "Filming a video together",
+      "subtitle": "Social-IQ 2.0 · 0:00-0:30",
+      "summary": "Two co-hosts set up a shoot. Equal footing, playful tone, and a strongly cooperative stance, but the objective sits at 0: social banter carrying a production task.",
+      "transcript_excerpt": [
+        {"time": "00:00.002", "text": "tiny I shot it because I've already had"}
+      ],
+      "provenance": "Figure 16 of the paper, the annotation interface."
+    },
+    "figure1_left": {
+      "title": "\"I left my hummus back there\"",
+      "subtitle": "Social-IQ 2.0 · parent and child",
+      "summary": "A warm, ordinary exchange. Conversational content alone gives almost nothing away; the visual channel carries the affect.",
+      "dialogue": [
+        {"speaker": "Parent", "text": "I left my hummus back there."},
+        {"speaker": "Child", "text": "What's hummus?"},
+        {"speaker": "Parent", "text": "I'm so glad you two got back together, even though you were apart for a while."}
+      ],
+      "provenance": "Figure 1, left."
+    },
+    "figure1_right": {
+      "title": "\"Go to an AA meeting right now\"",
+      "subtitle": "Social-IQ 2.0 · parent and child",
+      "summary": "The same category label as the clip above, a completely different configuration. The bond is intense and enduring in both directions, but valence and stance split apart, and the child reads the relationship more harshly than the parent does.",
+      "dialogue": [
+        {"speaker": "Child", "text": "I've had enough of you my whole life! Go to an AA meeting right now and get some help!"},
+        {"speaker": "Parent", "text": "How many more chances does he think we'll give him?"}
+      ],
+      "provenance": "Figure 1, right."
+    }
+  }
+}

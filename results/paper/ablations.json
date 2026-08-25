@@ -1,0 +1,33 @@
+{
+  "_source": "PIVOTSBench paper, Tables 3, 4 and 5",
+  "_note": "Base model is Qwen3-32B-VL unless the row names another model. Values are Task 1 accuracy (%).",
+  "dimensions": ["P", "I", "V", "O", "T", "S"],
+  "input_modality": {
+    "caption": "Effect of visual input and of redacting explicit social-role identifiers from the transcript.",
+    "rows": [
+      {"name": "Video only",              "social_iq": {"avg": 33.70, "dims": [62.68, 24.09, 30.62, 22.77, 30.92, 30.08]}, "youtube": {"avg": 31.18, "dims": [80.37, 13.33, 34.26, 15.38, 16.19, 26.42]}},
+      {"name": "Original conversation",   "social_iq": {"avg": 31.44, "dims": [56.84, 23.52, 24.80, 26.82, 26.25, 30.43]}, "youtube": {"avg": 37.81, "dims": [60.19, 48.15, 16.67, 36.11, 32.41, 33.33]}},
+      {"name": "Redacted conversation",   "social_iq": {"avg": 28.97, "dims": [55.06, 21.73, 24.31, 21.92, 25.41, 25.41]}, "youtube": {"avg": 33.64, "dims": [53.64, 47.27, 20.00, 24.55, 26.36, 30.00]}},
+      {"name": "Video + original conv.",  "social_iq": {"avg": 34.54, "dims": [62.62, 23.82, 33.82, 23.77, 30.28, 31.50]}, "youtube": {"avg": 40.81, "dims": [67.92, 32.38, 34.91, 29.47, 35.85, 43.14]}, "highlight": true},
+      {"name": "Video + redacted conv.",  "social_iq": {"avg": 35.83, "dims": [60.86, 22.46, 42.97, 24.78, 28.77, 32.95]}, "youtube": {"avg": 32.22, "dims": [47.00, 29.35, 25.29, 22.08, 25.53, 41.11]}},
+      {"name": "Qwen3-Omni-30B",          "social_iq": {"avg": 40.93, "dims": [46.92, 36.96, 46.46, 41.19, 26.35, 47.97]}, "youtube": {"avg": 40.10, "dims": [51.06, 40.78, 27.52, 51.85, 29.41, 40.91]}},
+      {"name": "Qwen3-Omni-30B, no audio","social_iq": {"avg": 32.61, "dims": [29.96, 40.34, 35.97, 30.98, 25.81, 32.81]}, "youtube": {"avg": 38.30, "dims": [48.00, 25.24, 35.45, 46.36, 35.58, 39.09]}}
+    ]
+  },
+  "prediction_setting": {
+    "caption": "Scoring one dimension at a time, all six at once, or both directions at once.",
+    "rows": [
+      {"name": "Separate",  "social_iq": {"avg": 34.54, "dims": [62.62, 23.82, 33.82, 23.77, 30.28, 31.50]}, "youtube": {"avg": 40.81, "dims": [67.92, 32.38, 34.91, 29.47, 35.85, 43.14]}},
+      {"name": "Joint",     "social_iq": {"avg": 43.26, "dims": [62.32, 41.60, 45.19, 22.51, 33.77, 54.16]}, "youtube": {"avg": 38.63, "dims": [82.24, 29.91, 44.86, 11.21, 30.84, 32.71]}},
+      {"name": "Pairwise",  "social_iq": {"avg": 42.19, "dims": [63.55, 31.87, 50.18, 19.41, 33.70, 54.40]}, "youtube": {"avg": 39.67, "dims": [86.96, 28.26, 42.39, 15.22, 28.26, 36.96]}}
+    ]
+  },
+  "prompting": {
+    "caption": "Injecting human reasoning heuristics into the prompt, on top of separate prediction.",
+    "rows": [
+      {"name": "Baseline",     "social_iq": {"avg": 34.54, "dims": [62.62, 23.82, 33.82, 23.77, 30.28, 31.50]}, "youtube": {"avg": 40.81, "dims": [67.92, 32.38, 34.91, 29.47, 35.85, 43.14]}},
+      {"name": "Multi-stage",  "social_iq": {"avg": 41.23, "dims": [60.06, 39.45, 46.70, 26.82, 26.13, 48.15]}, "youtube": {"avg": 31.48, "dims": [37.96, 44.44, 30.56, 22.22, 16.67, 37.04]}},
+      {"name": "In-context",   "social_iq": {"avg": 40.51, "dims": [58.96, 43.39, 41.95, 25.41, 31.06, 41.88]}, "youtube": {"avg": 32.40, "dims": [60.75, 42.99, 34.26, 12.96, 16.82, 26.85]}}
+    ]
+  }
+}

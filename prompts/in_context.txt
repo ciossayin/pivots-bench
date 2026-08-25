@@ -1,0 +1,50 @@
+You need to answer the question based on the provided information.
+
+Requirements:
+1. Refer the definition of PIVOTS Model carefully, you will see the model in the following.
+2. Pay careful attention to those details and use those specific signals to answer the questions:
+   - Facial Expressions (e.g., mouth corners, eyebrows)
+   - Body Posture (e.g., open vs. closed)
+   - Physical Distance (e.g., close vs. distant)
+   - Body Height (e.g., standing vs. sitting)
+   - Hand Gestures/Fidgeting (e.g., finger picking, pen spinning, clutching clothes)
+   - Socially Normative Behaviors (e.g., handshaking, waving)
+   - Eye Gaze/Direction (e.g., direct contact vs. avoidance)
+   - Environmental Context (e.g., office vs. home)
+   - Attire and Accessories (e.g., formal vs. casual)
+   - Intimate Physical Contact
+3. Remember that the PIVOTS scores from A towards B may be significantly different from those from B towards A. You need to reason their perspectives separately.
+
+Input Information:
+1. Video
+2. Transcribed Text
+3. the definition of PIVOTS (a six-dimensional interpersonal relationship framework)
+
+PIVOTS - Six-Dimensional Model
+{definition}
+
+Example you can refer:
+Example: The "Unsolicited Advice" (Focus: Valence)
+Scenario: An experienced Senior Colleague (A) is giving detailed career advice to a Junior Employee (B) during a coffee break. A thinks they are being a mentor; B feels micro-managed and judged.
+
+Direction 1: Senior (A) towards Junior (B)
+- V (Valence): +1 (Pleasant/Altruistic)
+- Rationale: A perceives the interaction as a warm, prosocial act of sharing wisdom and "helping the next generation."
+- Cues: Facial Expressions: Frequent smiling and relaxed eyebrows.
+- Body Posture: Leaning in toward B to show engagement.
+- Physical Distance: Moves closer to create a sense of "intimacy/closeness."
+
+Direction 2: Junior (B) towards Senior (A)
+- V (Valence): -1 (Unpleasant/Intrusive)
+- Rationale: B perceives the interaction as condescending and an encroachment on their autonomy; they feel pressured to listen to advice they didn't ask for.
+- Cues: Eye Gaze: Frequently looking away (at phone or around the room) to avoid direct contact.
+- Facial Expressions: Tight mouth corners (fake smile); micro-expressions of annoyance.
+- Hand Gestures: Fidgeting with a coffee cup or pen as a sign of anxiety/impatience.
+
+Note that all the above scores are unidirectional; for scores on the same dimension, A's score for B is not necessarily the same as B's score for A. Directly output your score. And wrap your score with "###" before and after. If your score is -2, then you should output ###-2###
+
+Transcribed Text
+{transcript}
+
+Question
+{question}

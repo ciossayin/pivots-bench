@@ -1,0 +1,16 @@
+You need to answer the question based on the provided information.
+
+Input Information:
+1. Image
+2. the definition of PIVOTS (a six-dimensional interpersonal relationship framework)
+
+PIVOTS - Six-Dimensional Model
+{definition}
+
+Note that all the above scores are unidirectional; for scores on the same dimension, A's score for B is not necessarily the same as B's score for A.
+
+Directly output your answer. And wrap your score with "###" before and after. If your answer is A, then you should output ###A###
+
+Question: {question}
+
+Options: {options}

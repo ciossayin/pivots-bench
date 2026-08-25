@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Results · PIVOTSBench</title>
+<meta name="description" content="Benchmark results and ablations for GPT-5, Gemini 2.5 Pro and Qwen3-VL on PIVOTSBench.">
+<link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+<nav class="nav"><div class="wrap">
+      <a class="mark" href="./">PIVOTSBench</a>
+      <ul>
+        <li><a href="./" >Overview</a></li>
+        <li><a href="./data.html" >Samples</a></li>
+        <li><a href="./leaderboard.html" aria-current="page">Results</a></li>
+        <li><a href="./dataset.html" >Dataset</a></li>
+        <li><a href="https://github.com/ciossayin/pivots-bench">GitHub</a></li>
+      </ul>
+    </div></nav>
+<header class="hero wrap" style="padding-bottom:1.5rem">
+  <h1 style="max-width:20ch">Results</h1>
+  <p class="lede narrow" style="margin-top:1rem">Accuracy in percent. Chance is 20% on Tasks 1 and 2,
+  and 40% on Task 3, where selecting one of the two correct cues earns half credit.</p>
+</header>
+
+<section class="wrap" style="padding-top:1.5rem">
+  <h2>Social-IQ 2.0 subset</h2>
+  <div class="tablewrap"><table id="t-socialiq"></table></div>
+  <p class="muted small" style="margin-top:1rem">Proprietary models lead on every task. Qwen3 falls
+  below chance on Task 3, meaning it does not reliably identify which visual cue supports a
+  judgment it has already made.</p>
+</section>
+
+<section class="wrap">
+  <h2>YouTube subset</h2>
+  <div class="tablewrap"><table id="t-youtube"></table></div>
+  <p class="muted small" style="margin-top:1rem">Scores run higher here than on Social-IQ 2.0 even
+  though the interactions are more restrained &mdash; plausibly because YouTube material is heavily
+  represented in pretraining.</p>
+</section>
+
+<section class="wrap">
+  <h2>Input modality</h2>
+  <p class="sub small narrow" style="margin-top:.5rem">Qwen3-32B-VL throughout, except the two Omni
+  rows. Redacted transcripts replace kinship terms and honorifics with
+  <code>[PERSON]</code> and <code>[TITLE]</code>, keeping syntax, tone and logical flow intact.</p>
+  <div class="tablewrap"><table id="t-modality"></table></div>
+  <p class="muted small" style="margin-top:1rem">Redaction costs 2.5 points on Social-IQ 2.0 and 4.2
+  on YouTube: explicit roles help, but models are not merely reading them off. Removing audio from
+  Qwen3-Omni costs 8.3 points on Social-IQ 2.0 against 1.8 on YouTube, where relationships live in
+  discourse context rather than in localized signals.</p>
+</section>
+
+<section class="wrap">
+  <h2>Prediction setting</h2>
+  <p class="sub small narrow" style="margin-top:.5rem">Scoring one dimension at a time, all six at
+  once for one direction, or both directions at once.</p>
+  <div class="tablewrap"><table id="t-setting"></table></div>
+  <p class="muted small" style="margin-top:1rem">Joint prediction adds 8.7 points on casual
+  interactions, where dimensions reinforce each other. On in-depth interviews the effect reverses
+  and separate scoring wins &mdash; except on power, where pairwise prediction reaches 87.0%.</p>
+</section>
+
+<section class="wrap">
+  <h2>Prompting strategy</h2>
+  <p class="sub small narrow" style="margin-top:.5rem">Injecting human reasoning heuristics: a
+  four-phase protocol with a blind-review pass, or a cue checklist with a worked bidirectional
+  example. Both prompts are in <code>prompts/</code>.</p>
+  <div class="tablewrap"><table id="t-prompting"></table></div>
+  <p class="muted small" style="margin-top:1rem">Both strategies gain about six points on salient
+  social interactions and lose about nine on in-depth ones. Heuristics that help a model read an
+  obvious scene make it overcommit on a subtle one.</p>
+</section>
+
+<footer class="wrap">
+      <div>PIVOTSBench &middot; EMNLP 2026</div>
+      <div><a href="https://github.com/ciossayin/pivots-bench">Code and data</a> &middot; <a href="./dataset.html#cite">Cite</a></div>
+    </footer>
+<script src="./assets/leaderboard.js"></script>
+</body>
+</html>
