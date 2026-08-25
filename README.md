@@ -1,8 +1,8 @@
 # PIVOTSBench
 
 **Evaluating fine-grained interpersonal relationship reasoning in multimodal large language models**
-Shuxiang Zhang¹ · Yiting Yin² · Wenxuan Song³ · Yuhang Wu³† · Miao Liu³\* — EMNLP 2026, Main Conference
-¹Sun Yat-sen University · ²University of Michigan · ³Tsinghua University · †Project lead · \*Corresponding author
+Shuxiang Zhang¹\* · Yiting Yin²\* · Wenxuan Song³ · Yuhang Wu³† · Miao Liu³‡ — EMNLP 2026, Main Conference
+¹Sun Yat-sen University · ²University of Michigan · ³Tsinghua University · \*Equal contribution · †Project lead · ‡Corresponding author
 
 Project page: **https://ciossayin.github.io/pivots-bench/**
 
