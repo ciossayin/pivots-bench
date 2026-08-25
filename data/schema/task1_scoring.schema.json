@@ -17,7 +17,7 @@
         "youtube_id": {"type": ["string", "null"], "description": "11-character YouTube identifier. Null when the clip is not resolvable to a public URL."},
         "start_sec": {"type": "number"},
         "end_sec": {"type": "number"},
-        "clip_file": {"type": ["string", "null"], "description": "Expected local filename after running scripts/prepare_clips.py, e.g. 4AmVjblOvy4_0_30s.mp4"},
+        "clip_file": {"type": ["string", "null"], "description": "Expected filename of the locally obtained clip under videos/, e.g. 4AmVjblOvy4_0_30s.mp4. See data/README.md for how to obtain clips."},
         "transcript_file": {"type": ["string", "null"]}
       }
     },

@@ -51,7 +51,7 @@ def _clip_images(video: dict, video_dir: Path, n_frames: int) -> list[str]:
     path = video_dir / name
     if not path.exists():
         raise FileNotFoundError(
-            f"{path} is missing. Run scripts/prepare_clips.py first, or pass --no-video."
+            f"{path} is missing. Place the clip under videos/ (see data/README.md), or pass --no-video."
         )
     duration = float(video["end_sec"]) - float(video["start_sec"])
     frames = extract_frames(path, uniform_timestamps(duration, n_frames))

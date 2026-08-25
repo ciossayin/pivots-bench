@@ -116,7 +116,9 @@ about the people on screen.
 
 Annotations: CC BY-NC-SA 4.0 (see `../LICENSE-DATA`). Code: MIT.
 
-No video, audio or extracted frames are redistributed. Social-IQ 2.0 clips must be
-obtained from the original challenge under its license; YouTube material is
-referenced by identifier and time span, and retrieving it is the user's
-responsibility under YouTube's Terms of Service.
+No video, audio or extracted frames are redistributed, and no download tooling is
+provided. Social-IQ 2.0 clips must be obtained from the original challenge under
+its license. YouTube material is referenced by identifier and time span only;
+retrieving it with standard tools and cutting the annotated span to
+`videos/<video_id>.mp4` is the user's responsibility under YouTube's Terms of
+Service.
