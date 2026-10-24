@@ -104,7 +104,7 @@ function aux(sample) {
 
 function render(data) {
   const cues = data.cues || {};
-  const html = data.samples.map((s) => `
+  const html = data.samples.filter((s) => s.youtube_id).map((s) => `
     <article class="sample">
       <div class="kicker">${esc(s.subtitle || s.source)}</div>
       <h3>${esc(s.title || s.video_id)}</h3>

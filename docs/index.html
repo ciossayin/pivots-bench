@@ -13,7 +13,6 @@
       <a class="mark" href="./">PIVOTSBench</a>
       <ul>
         <li><a href="./" aria-current="page">Overview</a></li>
-        <li><a href="./data.html" >Samples</a></li>
         <li><a href="./leaderboard.html" >Results</a></li>
         <li><a href="./dataset.html" >Dataset</a></li>
         <li><a href="https://github.com/ciossayin/pivots-bench">GitHub</a></li>
@@ -28,12 +27,10 @@
     <div class="affil"><sup>*</sup>Equal contribution &nbsp; <sup>&dagger;</sup>Project lead &nbsp; <sup>&Dagger;</sup>Corresponding author</div>
   </div>
   <div class="actions">
-    <a href="./assets/paper.pdf">Paper</a>
-    <a href="https://arxiv.org/abs/2606.23092">arXiv</a>
+    <a href="https://arxiv.org/abs/2606.23092">Paper</a>
     <a href="./assets/poster.pdf">Poster</a>
     <a href="https://github.com/ciossayin/pivots-bench">Code</a>
     <a href="./dataset.html">Dataset</a>
-    <a href="./data.html">Browse samples</a>
   </div>
 </header>
 
@@ -130,6 +127,14 @@
   </div>
 </section>
 
+<section class="wrap" id="example">
+  <h2>An example</h2>
+  <p class="sub small" style="margin-top:.5rem;max-width:62ch">One clip from the benchmark with its
+  annotation. Each row is one direction, scored independently. Hover a cell for the evidence frame
+  and the annotator&rsquo;s rationale; a hatched cell is a score not yet public.</p>
+  <div id="samples"></div>
+</section>
+
 <section class="wrap">
   <h2>What the results say</h2>
   <div class="narrow stack" style="margin-top:1rem">
@@ -158,5 +163,6 @@
       <div>PIVOTSBench &middot; EMNLP 2026</div>
       <div><a href="https://github.com/ciossayin/pivots-bench">Code and data</a> &middot; <a href="./dataset.html#cite">Cite</a></div>
     </footer>
+<script src="./assets/samples.js"></script>
 </body>
 </html>

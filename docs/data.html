@@ -2,60 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Samples · PIVOTSBench</title>
-<meta name="description" content="Annotated PIVOTSBench samples: video, dialogue, bidirectional six-dimensional scores, evidence frames and visual cues.">
-<link rel="stylesheet" href="./assets/style.css">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='0' y='10' width='6.4' height='12' fill='%23c53b39'/><rect x='6.4' y='10' width='6.4' height='12' fill='%23e8817d'/><rect x='12.8' y='10' width='6.4' height='12' fill='%23eceae5'/><rect x='19.2' y='10' width='6.4' height='12' fill='%2386b6ef'/><rect x='25.6' y='10' width='6.4' height='12' fill='%23256abf'/></svg>">
+<title>PIVOTSBench</title>
+<meta http-equiv="refresh" content="0; url=./#example">
+<link rel="canonical" href="./#example">
 </head>
-<body>
-<nav class="nav"><div class="wrap">
-      <a class="mark" href="./">PIVOTSBench</a>
-      <ul>
-        <li><a href="./" >Overview</a></li>
-        <li><a href="./data.html" aria-current="page">Samples</a></li>
-        <li><a href="./leaderboard.html" >Results</a></li>
-        <li><a href="./dataset.html" >Dataset</a></li>
-        <li><a href="https://github.com/ciossayin/pivots-bench">GitHub</a></li>
-      </ul>
-    </div></nav>
-<header class="hero wrap" style="padding-bottom:1.5rem">
-  <h1 style="max-width:18ch">Samples</h1>
-  <p class="lede narrow" style="margin-top:1rem">A clip, its dialogue, and the annotation that goes
-  with it &mdash; six scores in each direction, the frame the annotator pointed at, and the visual
-  cue they named.</p>
-  <div class="legend">
-      <span><i style="background:var(--s-neg2)"></i>&minus;2</span>
-      <span><i style="background:var(--s-neg1)"></i>&minus;1</span>
-      <span><i style="background:var(--s-zero)"></i>0</span>
-      <span><i style="background:var(--s-pos1)"></i>+1</span>
-      <span><i style="background:var(--s-pos2)"></i>+2</span>
-      <span class="muted">Sign follows the dimension&rsquo;s own axis, not good vs. bad.</span>
-    </div>
-</header>
-
-<section class="wrap" style="padding-top:1.5rem">
-  <div id="samples"><p class="muted">Loading&hellip;</p></div>
-</section>
-
-<section class="wrap">
-  <h2>Reading the matrix</h2>
-  <div class="narrow stack" style="margin-top:1rem">
-    <p class="sub">Each row is one direction. The two rows of a clip are scored independently,
-    because two people in the same conversation do not have the same information about it: the
-    senior colleague giving unsolicited advice reads the exchange as warm (V&nbsp;+1) while the
-    junior reads it as intrusive (V&nbsp;&minus;1).</p>
-    <p class="sub">A hatched cell is an annotation not yet public. Hover any cell for the evidence
-    timestamp and the annotator&rsquo;s rationale.</p>
-    <p class="muted small">These samples are generated from <code>data/*.jsonl</code> by
-    <code>scripts/export_site_data.py</code>. Adding a clip to the released files adds it here.</p>
-  </div>
-</section>
-
-<footer class="wrap">
-      <div>PIVOTSBench &middot; EMNLP 2026</div>
-      <div><a href="https://github.com/ciossayin/pivots-bench">Code and data</a> &middot; <a href="./dataset.html#cite">Cite</a></div>
-    </footer>
-<script src="./assets/samples.js"></script>
-</body>
+<body><p><a href="./#example">PIVOTSBench example</a></p></body>
 </html>
