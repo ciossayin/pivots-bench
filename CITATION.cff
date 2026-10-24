@@ -19,6 +19,11 @@ authors: &authors
     affiliation: "Tsinghua University"
     email: miaoliu@mail.tsinghua.edu.cn
 year: 2026
+identifiers:
+  - type: other
+    value: "arXiv:2606.23092"
+    description: arXiv preprint
+url: "https://arxiv.org/abs/2606.23092"
 preferred-citation:
   type: conference-paper
   title: "PIVOTSBench: Evaluating Fine-Grained Interpersonal Relationship Reasoning in Multimodal Large Language Models"

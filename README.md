@@ -4,7 +4,7 @@
 Shuxiang Zhang¹\* · Yiting Yin²\* · Wenxuan Song³ · Yuhang Wu³† · Miao Liu³‡ — EMNLP 2026, Main Conference
 ¹Sun Yat-sen University · ²University of Michigan · ³Tsinghua University · \*Equal contribution · †Project lead · ‡Corresponding author
 
-Project page: **https://ciossayin.github.io/pivots-bench/** · [Paper](https://ciossayin.github.io/pivots-bench/assets/paper.pdf) · [Poster](https://ciossayin.github.io/pivots-bench/assets/poster.pdf)
+Project page: **https://ciossayin.github.io/pivots-bench/** · [Paper](https://ciossayin.github.io/pivots-bench/assets/paper.pdf) · [arXiv](https://arxiv.org/abs/2606.23092) · [Poster](https://ciossayin.github.io/pivots-bench/assets/poster.pdf)
 
 People do not read a relationship as a category. They read it as a set of graded,
 *directional* judgments, from faces and posture as much as from words. PIVOTS asks
@@ -125,6 +125,9 @@ without human oversight.
                Wu, Yuhang and Liu, Miao},
   booktitle = {Proceedings of the 2026 Conference on Empirical Methods in
                Natural Language Processing},
-  year      = {2026}
+  year      = {2026},
+  eprint        = {2606.23092},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL}
 }
 ```
