@@ -119,7 +119,7 @@ without human oversight.
 
 ```bibtex
 @inproceedings{pivotsbench2026,
-  title     = {PIVOTSBench: Evaluating Fine-Grained Interpersonal Relationship
+  title     = {PIVOTS-Bench: Evaluating Fine-Grained Interpersonal Relationship
                Reasoning in Multimodal Large Language Models},
   author    = {Zhang, Shuxiang and Yin, Yiting and Song, Wenxuan and
                Wu, Yuhang and Liu, Miao},

@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use PIVOTSBench, please cite the paper."
-title: "PIVOTSBench: Evaluating Fine-Grained Interpersonal Relationship Reasoning in Multimodal Large Language Models"
+title: "PIVOTS-Bench: Evaluating Fine-Grained Interpersonal Relationship Reasoning in Multimodal Large Language Models"
 authors: &authors
   - family-names: Zhang
     given-names: Shuxiang
@@ -26,7 +26,7 @@ identifiers:
 url: "https://arxiv.org/abs/2606.23092"
 preferred-citation:
   type: conference-paper
-  title: "PIVOTSBench: Evaluating Fine-Grained Interpersonal Relationship Reasoning in Multimodal Large Language Models"
+  title: "PIVOTS-Bench: Evaluating Fine-Grained Interpersonal Relationship Reasoning in Multimodal Large Language Models"
   collection-title: "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing"
   year: 2026
   authors: *authors

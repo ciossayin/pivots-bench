@@ -83,7 +83,10 @@ section:first-of-type { border-top: none; }
 /* ---------- hero ---------- */
 
 header.hero { padding-top: 4.5rem; padding-bottom: 3rem; }
-header.hero h1 { max-width: 24ch; }
+header.hero h1 { max-width: 30ch; }
+header.hero h1 .name { display: block; }
+header.hero h1 .rest { display: block; margin-top: .2em; font-weight: 440; color: var(--ink-2);
+                       font-size: .78em; line-height: 1.22; letter-spacing: -.012em; }
 .byline { margin-top: 1.4rem; font-size: .98rem; line-height: 1.75; }
 .byline sup { color: var(--muted); font-size: .68em; }
 .affil { margin-top: .35rem; font-size: .85rem; color: var(--muted); }
